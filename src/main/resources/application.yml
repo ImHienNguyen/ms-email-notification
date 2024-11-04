@@ -11,7 +11,13 @@ spring:
         spring:
           json:
             trusted:
-              packages: *
+              packages: "*"
+
+services:
+  product:
+    kafka:
+      topic:
+        name: product-created-events-topic
 
 server:
   port: 0
